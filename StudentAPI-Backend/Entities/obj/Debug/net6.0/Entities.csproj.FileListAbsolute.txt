@@ -1,0 +1,45 @@
+D:\Csharp\Learning\RentACar-Backend\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\Csharp\Learning\RentACar-Backend\Entities\bin\Debug\net6.0\Entities.dll
+D:\Csharp\Learning\RentACar-Backend\Entities\bin\Debug\net6.0\Entities.pdb
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\Entities.dll
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\refint\Entities.dll
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\Entities.pdb
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\ref\Entities.dll
+D:\Csharp\Learning\RentACar-Backend\Entities\bin\Debug\net6.0\Core.dll
+D:\Csharp\Learning\RentACar-Backend\Entities\bin\Debug\net6.0\Core.pdb
+D:\Csharp\Learning\RentACar-Backend\Entities\obj\Debug\net6.0\Entities.csproj.CopyComplete
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\bin\Debug\net6.0\Core.dll
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\bin\Debug\net6.0\Core.pdb
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\Entities.csproj.CopyComplete
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\Algos YK\Desktop\RentACar-Backend-master\RentACar-Backend-master\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\bin\Debug\net6.0\Core.dll
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\bin\Debug\net6.0\Core.pdb
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\Entities.csproj.CopyComplete
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\Algos YK\Desktop\Projects\StudentAPI-Backend\Entities\obj\Debug\net6.0\ref\Entities.dll
