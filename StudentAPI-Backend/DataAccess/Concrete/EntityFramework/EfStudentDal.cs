@@ -42,7 +42,7 @@ public class EfStudentDal:EntityRepositoryBase<Student, StudentContext>, IStuden
                              SchoolAddress = school.Address,
                              StudentAge = student.Age
                          };
-            return result.Where(s => s.Id == studentId).SingleOrDefault();
+            return result.Where(s => s.Id == studentId).Single();
         }
     }
 }

@@ -13,6 +13,17 @@ namespace WebApi.Controllers
         {
             _confirmationService = confirmationService;
         }
+        [HttpGet("getall")]
+        public IActionResult GetAll()
+        {
+            var result = _confirmationService.GetAll();
+            if (result.Success)
+            {
+                return Ok();
+            }
+            return BadRequest();
+            
+        }
 
         [HttpGet("verifyconfirmation")]
         public IActionResult VerifyConfirmation(int confirmId,string code)

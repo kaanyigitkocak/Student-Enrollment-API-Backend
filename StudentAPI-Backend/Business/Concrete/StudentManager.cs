@@ -1,10 +1,13 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using Entities.DTOs;
+using System.ComponentModel.DataAnnotations;
 
 namespace Business.Concrete;
 
@@ -24,13 +27,14 @@ public class StudentManager:IStudentService
 
         return new SuccessDataResult<List<Student>>(_studentDal.GetAll(),"tum ogrenciler basariyla getirildi") ;
     }
-
+     
     public IDataResult<Student> Get(int id)
     {
         
         return new SuccessDataResult<Student>(_studentDal.Get(s => s.Id == id));
     }
 
+    [ValidationAspect(typeof(StudentValidator))]
     public IResult Add(Student student)
     {
         _confirmationService.Create(student.ParentId);

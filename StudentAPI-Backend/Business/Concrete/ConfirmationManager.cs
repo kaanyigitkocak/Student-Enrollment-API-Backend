@@ -33,12 +33,13 @@ namespace Business.Concrete
 
         public IDataResult<Confirmation> Get(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<Confirmation>(_confirmationDal.Get(a => a.Id == id));
         }
 
         public IDataResult<List<Confirmation>> GetAll()
         {
-            throw new NotImplementedException();
+            
+            return new SuccessDataResult<List<Confirmation>>(_confirmationDal.GetAll());
         }
 
         public IResult VerifyConfirm(int confirmId, string code)
