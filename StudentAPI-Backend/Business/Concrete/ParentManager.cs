@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
@@ -29,12 +31,14 @@ public class ParentManager:IParentService
         return new SuccessDataResult<Parent>(_parentDal.Get(p => p.Id == id));
     }
 
+    [ValidationAspect(typeof(ParentValidator))]
     public IResult Add(Parent parent)
     {
         _parentDal.Add(parent);
         return new SuccessResult();
     }
 
+    [ValidationAspect(typeof(ParentValidator))]
     public IResult Update(Parent parent)
     {
         _parentDal.Update(parent);

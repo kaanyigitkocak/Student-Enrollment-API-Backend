@@ -13,7 +13,7 @@ namespace Business.Abstract
         IDataResult<List<Confirmation>> GetAll();
         IDataResult<Confirmation> Get(int id);
         IResult Create(int parentId);
-        IResult Delete(Confirmation confirmation);
+        IResult Delete(int confirmationId);
         IResult VerifyConfirm(int confirmId,string code);
     }
 }

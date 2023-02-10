@@ -16,6 +16,7 @@ public class EfStudentDal:EntityRepositoryBase<Student, StudentContext>, IStuden
                 join school in context.Schools on student.SchoolId equals school.Id
                 select new StudentDetailDto()
                 {
+                    Id = student.Id,
                     StudentName = student.Name,
                     ParentName = parent.Name,
                     SchoolName = school.Name,
@@ -28,21 +29,9 @@ public class EfStudentDal:EntityRepositoryBase<Student, StudentContext>, IStuden
 
     public StudentDetailDto GetStudentDetailDtoById(int studentId)
     {
-        using (StudentContext context = new StudentContext())
-        {
-            var result = from student in context.Students
-                         join parent in context.Parents on student.ParentId equals parent.Id
-                         join school in context.Schools on student.SchoolId equals school.Id
-                         select new StudentDetailDto()
-                         {
-                             Id = student.Id,
-                             StudentName = student.Name,
-                             ParentName = parent.Name,
-                             SchoolName = school.Name,
-                             SchoolAddress = school.Address,
-                             StudentAge = student.Age
-                         };
-            return result.Where(s => s.Id == studentId).Single();
-        }
+        
+        var result = GetStudentDetailDto();
+        return result.Where(s => s.Id == studentId).Single();
+        
     }
 }

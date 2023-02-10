@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
@@ -19,6 +21,8 @@ namespace Business.Concrete
         {
             _confirmationDal = confirmationDal;
         }
+
+        [ValidationAspect(typeof(ConfirmationValidator))]
         public IResult Create(int parentId)
         {
             _confirmationDal.Add(_confirmationDal.CreateConfirmation(parentId));
@@ -26,9 +30,10 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        public IResult Delete(Confirmation confirmation)
+        public IResult Delete(int confirmationId)
         {
-            throw new NotImplementedException();
+            _confirmationDal.Delete(_confirmationDal.Get(a => a.Id == confirmationId));
+            return new SuccessResult();
         }
 
         public IDataResult<Confirmation> Get(int id)

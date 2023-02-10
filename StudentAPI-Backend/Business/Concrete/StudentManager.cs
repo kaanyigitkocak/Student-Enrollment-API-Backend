@@ -42,6 +42,7 @@ public class StudentManager:IStudentService
         return new SuccessResult("ogrenci basariyla veritabanina kaydedildi");
     }
 
+    [ValidationAspect(typeof(StudentValidator))]
     public IResult Update(Student student)
     {
         _studentDal.Update(student);

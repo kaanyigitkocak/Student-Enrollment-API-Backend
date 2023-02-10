@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
@@ -25,12 +27,14 @@ public class SchoolManager:ISchoolService
         return new SuccessDataResult<School>(_schoolDal.Get(s => s.Id == id));
     }
 
+    [ValidationAspect(typeof(SchoolValidator))]
     public IResult Add(School school)
     {
         _schoolDal.Add(school);
         return new SuccessResult();
     }
 
+    [ValidationAspect(typeof(SchoolValidator))]
     public IResult Update(School school)
     {
         _schoolDal.Update(school);
