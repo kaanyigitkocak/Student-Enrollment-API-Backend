@@ -19,9 +19,9 @@ namespace WebApi.Controllers
             var result = _confirmationService.GetAll();
             if (result.Success)
             {
-                return Ok();
+                return Ok(result);
             }
-            return BadRequest();
+            return BadRequest(result);
             
         }
 

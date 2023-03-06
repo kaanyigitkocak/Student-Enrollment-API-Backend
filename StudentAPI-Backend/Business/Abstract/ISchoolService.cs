@@ -9,5 +9,5 @@ public interface ISchoolService
     IDataResult<School> Get(int id);
     IResult Add(School school);
     IResult Update(School school);
-    IResult Delete(School school);
+    IResult Delete(int   schoolId);
 }   

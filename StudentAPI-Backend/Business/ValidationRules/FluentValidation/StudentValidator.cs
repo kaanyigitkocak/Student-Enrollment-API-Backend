@@ -16,7 +16,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(s => s.Name).NotEmpty();
             RuleFor(s => s.ParentId).NotEmpty();
             RuleFor(s => s.SchoolId).NotEmpty();
-            RuleFor(s => s.Age).LessThanOrEqualTo(7);
+            RuleFor(s => s.Age).LessThanOrEqualTo(7).WithMessage("Student age must be less than or equal to 7");
 
         }
 

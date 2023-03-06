@@ -95,10 +95,10 @@ namespace WebApi.Controllers
             return BadRequest(result);
         }
 
-        [HttpDelete("delete")]
-        public IActionResult Delete(int student)
+        [HttpDelete("delete/{studentId}")]
+        public IActionResult Delete(int studentId)
         {
-            var result = _studentService.Delete(student);
+            var result = _studentService.Delete(studentId);
             if (result.Success)
             {
                 return Ok(result);

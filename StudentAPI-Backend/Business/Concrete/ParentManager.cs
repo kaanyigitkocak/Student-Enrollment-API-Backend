@@ -1,5 +1,8 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Transaction;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results.Abstract;
 using Core.Utilities.Results.Concrete;
@@ -17,6 +20,7 @@ public class ParentManager:IParentService
         _parentDal = parentDal;
     }
 
+    [CacheAspect]
     public IDataResult<List<Parent>> GetAll()
     {
         return new SuccessDataResult<List<Parent>>(_parentDal.GetAll());
@@ -31,13 +35,22 @@ public class ParentManager:IParentService
         return new SuccessDataResult<Parent>(_parentDal.Get(p => p.Id == id));
     }
 
+    [TransactionScopeAspect]
+    [CacheRemoveAspect("IParentService.Get")]
     [ValidationAspect(typeof(ParentValidator))]
     public IResult Add(Parent parent)
     {
         _parentDal.Add(parent);
+
+        if (parent.Name == "asd")
+        {
+            throw new Exception("asdsadasdsad");
+        }
         return new SuccessResult();
     }
 
+
+    [CacheRemoveAspect("IParentService.Get")]
     [ValidationAspect(typeof(ParentValidator))]
     public IResult Update(Parent parent)
     {
@@ -45,6 +58,7 @@ public class ParentManager:IParentService
         return new SuccessResult();
     }
 
+    [CacheRemoveAspect("IParentService.Get")]
     public IResult Delete(int parentId)
     {
         _parentDal.Delete(_parentDal.Get(p => p.Id == parentId));

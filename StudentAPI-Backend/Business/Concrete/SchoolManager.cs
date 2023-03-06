@@ -41,9 +41,9 @@ public class SchoolManager:ISchoolService
         return new SuccessResult();
     }
 
-    public IResult Delete(School school)
+    public IResult Delete(int schoolId)
     {
-        _schoolDal.Delete(school);
+        _schoolDal.Delete(_schoolDal.Get(s => s.Id == schoolId));
         return new SuccessResult();
     }
 }
